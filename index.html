@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body{ padding: 100px}
+    </style>
+    <base href="baselink.com" target="_blank"> <!--All links will open in new window with base link baselink.com/ a ref link-->
+</head>
+<body>
+    <!--This is a comment. Comments are not displayed in the browser-->
+    <header></header>
+    <hgroup>
+        <h2>Norway</h2>
+        <p>The land with the midnight sun.</p>
+      </hgroup>
+    <figure>
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <figcaption>A lovely favela</figcaption>
+    </figure>
+
+    <map name="workmap"> <!-- The areas are clickable to send links somewhere-->
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="">
+    </map>
+
+    <a href="" download="file.jpg" target="_blank" rel="noopener noreferrer">Link for everything</a>
+
+    <article>The article tag specifies independent, self-contained content like a blog post, forum post or news story</article>
+
+    <aside>The <aside> content is often placed as a sidebar in a document</aside>
+
+    <audio controls loop autoplay src="link.wdsd">
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+
+
+    <canvas id="myCanvas" height="100px" width="100px">
+        Your browser does not support the canvas tag.
+    </canvas>
+
+    <table>
+        <caption>Monthly savings</caption>
+        <colgroup>
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+    </table>
+
+    <li><data value="effef"></data>dasdefee</li>
+
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <dl>    <!-- The <dd> tag is used to describe a term/name in a description list.
+
+        The <dd> tag is used in conjunction with <dl> (defines a description list) and <dt> (defines terms/names).
+        
+        Inside a <dd> tag you can put paragraphs, line breaks, images, links, lists, etc. -->
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+    <details open>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+
+    <dialog open>This is an open dialog window</dialog>
+
+    <form action="">
+        <fieldset form="#formid" name="fieldset" disabled>
+            <legend>Fieldset 1</legend>
+            <input type="text" id="" type="file" accept="file_extension audio/* video/* image/* " autocomplete="" 
+            autocapitalize="" checked disabled list="#datalist" max maxlength min minlength="" multiple pattern placeholder="" 
+            required readonly step 
+            >
+            <select name="" id=""></select>
+            <option value=""></option>
+            <output></output>
+        </fieldset>
+        <fieldset>
+            <legend>Fieldset 2</legend>
+            <textarea name="" id=""></textarea>
+            <optgroup></optgroup>
+            <label for=""></label>
+            <button autofocus disabled form="#form" formaction="post.com" formmethod="post get" formnovalidate
+            type="submit reset menu" value="Hi Guys"
+            >A key button</button>        
+        </fieldset>
+    </form>
+    
+
+
+    <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" allow allowfullscreen
+    height="" srcdoc="html code" 
+    ></iframe>
+
+
+    <ol>
+        <li></li>
+        <li value="3"></li>
+    </ol>
+
+    <main>
+        The content inside the main element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+        There must not be more than one main element in a document. The main element must NOT be a descendant of an article, aside, foote>, header, or nav element.
+    </main>
+
+    <menu>
+        <li>The menu tag defines an unordered list of content.</li>
+    </menu>
+
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.6" high="" low="" optimum="">60%</meter>
+
+
+
+    
+    <footer>authorship information
+        copyright information
+        contact information
+        sitemap
+        back to top links
+        related documents
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>              
+            <!-- The contact information can be an email address, URL, physical address, phone number, social media handle, etc.-->
+            Box 564, Disneyland<br>
+            USA
+        </address>
+    </footer>
+</body>
+<script>
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 80, 80);
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+
+</html>
