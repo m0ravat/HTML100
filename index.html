@@ -6,6 +6,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
@@ -67,6 +68,31 @@
         </tr>
     </table>
 
+    <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table>
+
     <li><data value="effef"></data>dasdefee</li>
 
     <label for="browser">Choose your browser from the list:</label>
@@ -98,25 +124,39 @@
 
     <dialog open>This is an open dialog window</dialog>
 
-    <form action="">
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)" method="" novalidate target="" autocomplete="" enctype="">
         <fieldset form="#formid" name="fieldset" disabled>
             <legend>Fieldset 1</legend>
             <input type="text" id="" type="file" accept="file_extension audio/* video/* image/* " autocomplete="" 
             autocapitalize="" checked disabled list="#datalist" max maxlength min minlength="" multiple pattern placeholder="" 
             required readonly step 
             >
-            <select name="" id=""></select>
-            <option value=""></option>
-            <output></output>
+            <label for="cars">Choose a car:</label>
+
+            <select id="cars" autofocus disabled multiple required size="">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+            <input type="range" id="a" value="50">
+            +<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>
+            </form>        
         </fieldset>
         <fieldset>
             <legend>Fieldset 2</legend>
-            <textarea name="" id=""></textarea>
-            <optgroup></optgroup>
+            <textarea name="" id="" cols="" maxlength="" placeholder="" disabled readonly required rows="" wrap=""></textarea>
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>            
             <label for=""></label>
             <button autofocus disabled form="#form" formaction="post.com" formmethod="post get" formnovalidate
             type="submit reset menu" value="Hi Guys"
-            >A key button</button>        
+            >A key button</button> 
+            <label for="file">Downloading progress:</label>
+            <progress id="file" value="32" max="100"> 32% </progress>       
         </fieldset>
     </form>
     
@@ -127,7 +167,7 @@
     ></iframe>
 
 
-    <ol>
+    <ol reversed type="">
         <li></li>
         <li value="3"></li>
     </ol>
@@ -147,6 +187,43 @@
     <label for="disk_d">Disk usage D:</label>
     <meter id="disk_d" value="0.6" high="" low="" optimum="">60%</meter>
 
+    <picture> <!--One picture based off which source size it fits-->
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+
+    <search>
+        <form>
+          <input name="fsrch" id="fsrch" placeholder="Search W3Schools">
+        </form>
+    </search>
+      
+
+    <section>This is a section</section>
+
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+
+
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+        <h2>Flower</h2>
+        <img src="img_white_flower.jpg" width="214" height="204">
+    </template>
+
+
+    <video width="320" height="240" controls autoplay height="" loop muted poster=" " preload=" " width="">
+        <source src="forrest_gump.mp4" type="video/mp4">
+        <source src="forrest_gump.ogg" type="video/ogg">
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English" default kind=""> 
+        <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    </video>
 
 
     
@@ -171,6 +248,12 @@
     let ctx = canvas.getContext("2d");
     ctx.fillStyle = "#FF0000";
     ctx.fillRect(0, 0, 80, 80);
+
+    function showContent() {
+    let temp = document.getElementsByTagName("template")[0];
+    let clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+}
 </script>
 <noscript>Your browser does not support JavaScript!</noscript>
 
