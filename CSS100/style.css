@@ -1,0 +1,19 @@
+h1{
+    background: red;
+    animation:mymove 5s infinite;
+}
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+} 
+@font-face {
+    font-family: face;
+    src: url();
+}
+@media screen {
+    
+}
+@import url(.css);
+@keyframes identifier {
+    
+}
