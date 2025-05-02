@@ -1,10 +1,17 @@
+@import url(.css);
+*{/*all elemenys*/}
+.className{}
+#idName{}
+div & #id{}
 h1{
     background: red;
     animation:mymove 5s infinite;
 }
 @keyframes mymove {
     from {background-color: red;}
-    to {background-color: blue;}
+    to {background-color: blue;} /*This can be used to change aspect-ratio, background css, border css, box-shadow, color, 
+    width/height css, font-size/font-weight/font css, margin css, opacity, padding, rotate, scale, text-decoration-color, text-shadow,
+    visiblity, trasnform, translate*/
 } 
 @font-face {
     font-family: face;
@@ -13,7 +20,331 @@ h1{
 @media screen {
     
 }
-@import url(.css);
 @keyframes identifier {
     
 }
+div > p{
+    /*any p elements in div that dont have another element in between, so h1 inbetween div and p wont follow this*/
+}
+div p{}
+svg | circle{/*works on links like host.com/svg, xlink, xhtml*/}
+div + p{/*First p element after directly after div*/}
+div, p, li{/*selects any and all div, p, li*/}
+h1 ~ p{color: red;}
+
+input[type=checkbox] {
+    accent-color: red;
+} /*affects all form input types, button, select, textarea, option , label, details, summary, a*/
+
+body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: fixed; /*image will be fixed on page*/
+} /*repeat image horizontally*/
+div{
+    background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+p {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: double;
+    border-left-style: solid;
+    border-radius: 5px;
+  }
+  p.dotted {outline-style: dotted;   
+    outline-color: red;
+    outline-width: thin;
+  }
+  p.dashed {outline-style: dashed;
+    outline-offset: 15px;
+}
+  p.solid {outline-style: solid;}
+  p.double {outline-style: double;}
+  p.groove {outline-style: groove;}
+  p.ridge {outline-style: ridge;}
+  p.inset {outline-style: inset;}
+  p.outset {outline-style: outset;}
+
+  div {
+    text-align: justify;
+  }
+h1{text-align: end;}  
+img.a {
+    vertical-align: baseline;
+  }
+  
+  img.b {
+    vertical-align: text-top;
+  }
+  
+  img.c {
+    vertical-align: text-bottom;
+  }
+  
+  img.d {
+    vertical-align: sub;
+  }
+  
+  img.e {
+    vertical-align: super;
+  } 
+
+  a{
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+    text-transform: lowercase;
+  }
+  p {
+    text-indent: 50px;
+    letter-spacing: 5px; /*space between character*/
+    line-height: 1.8;
+    word-spacing: 10px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-stretch: condensed;
+
+
+  } /*indent on first line of text will be 50px whitespace*/
+  h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+  ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+    list-style-image: url('sqpurple.gif');
+    list-style-position: inside;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  #customers tr:hover {background-color: #ddd;}
+span{display: inline;}
+div{display: block;}
+table{display: grid;}
+section{display: flex;}
+*{position: static;}
+.left{position: relative; left: 20px;}
+.inside{position: absolute; top: 90px;}
+nav{position: sticky;}
+
+img{
+    float: right;
+}
+
+.clearfix {
+    overflow: auto;
+  } /*for images and textin a box*/
+
+  .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  } /*aligns element in center lie box, width <100%*/
+  .center {
+    text-align: center;
+    border: 3px solid green;
+  }
+  .center {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+  
+  .center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+  }
+
+  img {
+    opacity: 0.5;
+  }
+  
+  img:hover {
+    opacity: 1.0;
+  }
+  div {
+    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+  }
+
+  #borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 round;
+  }
+  html { 
+    background: url(img_man.jpg) no-repeat center fixed; 
+    background-size: cover;
+  }
+
+  #grad {
+    background-image: linear-gradient(red, yellow);
+  }
+  #grad {
+    background-image: radial-gradient(red, yellow, green);
+  }
+  #grad {
+    background-image: radial-gradient(circle, red, yellow, green);
+  }
+  #grad {
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+  }
+  #clip{
+    text-overflow: clip;
+    text-overflow: ellipsis;
+  }    
+
+  p {
+    word-wrap: break-word;
+  }
+  p.test1 {
+    word-break: keep-all;
+  }
+  
+  p.test2 {
+    word-break: break-all;
+  }
+
+  #transform{
+    transform: translateX(3);
+  }
+
+  #div1 {transition-timing-function: linear;   transition: width 2s, height 4s;
+    transition-delay: 1s;
+}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div {
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border: 1px solid black;
+  }
+  
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  #img1 {
+    filter: brightness(150%);
+    filter: blur(2px);
+    filter: contrast(150%);
+    filter: drop-shadow(10px 10px 7px lightblue);
+    filter: grayscale(60%);
+    filter: grayscale(0.4);
+    filter: hue-rotate(90deg);
+    filter: invert(70%);
+    filter: opacity(80%);
+    filter: saturate(100%);
+    filter: sepia(60%);
+  }
+
+  img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+  img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+  }
+  img {
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+    object-position: 80% 100%;
+
+  }

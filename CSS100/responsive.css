@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main right'
+      'footer footer footer footer footer footer';
+      gap: 10px;
+      background-color: white;
+      padding: 10px;
+  }
+  
+  .grid-container > div {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .item4 {
+    grid-area: right;
+    border: 2px solid #0099cc;
+    background-color: white;
+    padding: 15px;
+    color: #000000;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } /* 600px or less it does*/
+
+  /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+    div.example {
+        display: none;
+      }
+  }
+
+  video, image {
+    width: 100%;
+    height: auto;
+  }
+  
+  

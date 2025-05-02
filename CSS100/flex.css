@@ -1,0 +1,8 @@
+div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; /* vertical */
+    justify-content: space-evenly;
+    
+}

@@ -1,0 +1,53 @@
+@import "reset"; // imports reset.scss
+@import "colors"; // imports _colors.scss partial sass file, so its not compiled by default until imported
+
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+// sass --watch input.scss output.css
+
+/* use the variables */
+.main-header {
+  background-color: $myColor;
+}
+
+h1 { // green
+  // $myColor: green !global; makes the next p green too
+  $myColor: rgb(16, 19, 16);
+  color: $myColor;
+}
+
+p { //red
+  color: $myColor;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: red;
+}

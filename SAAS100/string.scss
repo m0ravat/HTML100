@@ -1,0 +1,17 @@
+$font: quote("Open Sans");
+body {
+  font-family: #{$font}, sans-serif;
+}
+
+@if str-index(".btn-primary", "btn") {
+    .btn-primary {
+      background: blue;
+    }
+  }
+
+  
+  $base: "button";
+  $modified: str-insert($base, "-primary", 7); // Result: "button-primary" 7 is after button index 6
+
+
+    
