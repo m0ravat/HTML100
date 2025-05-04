@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name" class="test">Webpack bundling</h1>
+    <p>First run npm init
+        Then, npm install webpack --save-dev
+        then npm install --save-dev babel-loader @babel/core @babel/preset-env 
+        then npm install style-loader css-loader --save-dev
+        npm install sass sass-loader --save-dev
+        save-dev is used since these are used to build the app before it gets put in production, not used during app run so 
+        save dev is best for this. Express/react are run during prod to load pages so NOT save-dev
+
+        Then npx webpack to run
+
+    </p>
+</body>
+<script src="./dist/bundle.js"></script>
+</html>
