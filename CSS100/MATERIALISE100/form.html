@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="container">  
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">textsms</i>
+                        <input type="text" id="autocomplete-input" class="autocomplete">
+                        <label for="autocomplete-input">Autocomplete</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span>Red</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" />
+        <span>Yellow</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" class="filled-in" checked="checked" />
+        <span>Filled in</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" disabled="disabled" />
+        <span>Green</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" disabled="disabled" />
+        <span>Brown</span>
+      </label>
+    </p>
+    <div class="chips"></div>
+    <div class="chips chips-initial"></div>
+    <div class="chips chips-placeholder"></div>
+    <div class="chips chips-autocomplete"></div>
+
+    <!-- Customizable input  -->
+    <div class="chips">
+        <input class="custom-class">
+    </div>
+    <label for="">Date: <input type="text" class="datepicker"></label>
+    <label for="">Time: <input type="text" class="timepicker"></label>
+      <label>
+        <input name="group1" type="radio" />
+        <span>Red</span>
+      </label>
+    <div id="test-slider" style="    margin: 40px auto;
+    width: 80%;"></div>
+    <p class="range-field">
+      <input type="range" id="test5" min="0" max="100" />
+    </p>
+  <div class="switch">
+    <label>
+      Off
+      <input type="checkbox">
+      <span class="lever"></span>
+      On
+    </label>
+  </div>
+
+  <!-- Disabled Switch -->
+  <div class="switch">
+    <label>
+      Off
+      <input disabled type="checkbox">
+      <span class="lever"></span>
+      On
+    </label>
+  </div>
+    </form>
+  <div class="chip">
+    <img src="images/yuna.jpg" alt="Contact Person">
+    Jane Doe
+  </div>
+
+  <div class="chip">
+    Tag
+    <i class="close material-icons">close</i>
+  </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var slider = document.getElementById('test-slider');
+  noUiSlider.create(slider, {
+   start: [20, 80],
+   connect: true,
+   step: 1,
+   orientation: 'horizontal', // 'horizontal' or 'vertical'
+   range: {
+     'min': 0,
+     'max': 100
+   },
+   format: wNumb({
+     decimals: 0
+   })
+  });
+    // Autocomplete suggestions for both input and chips
+    const dateInputs = document.querySelectorAll('.datepicker');
+    M.Datepicker.init(dateInputs, {
+      format: 'yyyy-mm-dd',
+      autoClose: true,
+      showClearBtn: true
+    });
+
+    // Initialize timepicker
+    const timeInputs = document.querySelectorAll('.timepicker');
+    M.Timepicker.init(timeInputs, {
+      twelveHour: false, // use 24-hour format
+      autoClose: true,
+      showClearBtn: true
+    });
+    const autocompleteData = {
+      "JavaScript": null,
+      "HTML": null,
+      "CSS": null,
+      "React": null,
+      "Node.js": null,
+      "Python": null,
+      "Java": null,
+      "C++": null,
+      "Materialize": null
+    };
+
+    // Default chips (empty)
+    M.Chips.init(document.querySelectorAll('.chips'), {});
+
+    // Chips with initial data
+    M.Chips.init(document.querySelectorAll('.chips-initial'), {
+      data: [
+        { tag: 'HTML' },
+        { tag: 'CSS' },
+        { tag: 'JavaScript' }
+      ]
+    });
+
+    // Chips with placeholder
+    M.Chips.init(document.querySelectorAll('.chips-placeholder'), {
+      placeholder: 'Enter a tag',
+      secondaryPlaceholder: '+Tag'
+    });
+
+    // Chips with autocomplete
+    M.Chips.init(document.querySelectorAll('.chips-autocomplete'), {
+      placeholder: 'Type a skill',
+      secondaryPlaceholder: '+Skill',
+      autocompleteOptions: {
+        data: autocompleteData,
+        limit: 5,
+        minLength: 1
+      }
+    });
+  });
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>        
+</body>
+</html>
