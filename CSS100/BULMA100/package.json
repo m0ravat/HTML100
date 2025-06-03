@@ -1,0 +1,17 @@
+{
+  "name": "bulma100",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-bulma": "sass --load-path=node_modules bulma.scss my-bulma-project.css",
+    "start": "npm run build-bulma -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bulma": "^1.0.4",
+    "sass": "^1.89.1"
+  }
+}

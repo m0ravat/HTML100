@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"> built in uncustomizable link-->
+    <link rel="stylesheet" href="my-bulma-project.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+        <button class="button has-background-primary-100 has-text-primary-100-invert is-small">Numbers</button>
+        <button class="button has-background-link-00 has-text-link-00-invert is-medium">invert</button>
+        <button class="button has-background-primary has-text-primary-dark">Light/dark</button>
+        <button class="button has-background-info-soft has-text-info-bold is-large">Light mode</button>
+        <button class="button has-background-success-bold has-text-success-soft">dark mode</button>
+        <button class="button has-background-danger has-text-danger-on-scheme">On scheme</button>
+        <button class="button is-warning is-loading">Loading</button>
+        <button class="button has-background-danger" disabled>Button</button>
+        <h1>Colours: </h1>
+        <div class="skeleton-lines">
+            <div class="is-size-4">Hey guys</div>
+            <div class="is-size-1">bjhefb <span class="is-underlined">ewff</span></div>
+            <div class="is-size-7 is-italic">thhrhyrhy</div>
+
+            <div class="has-text-centered is-capitalized">rersddd</div>
+            <div class="has-text-justified is-lowercase">This is a justified paragraph. The text will align evenly on both the left and right sides, making the block look neat and flush like in formal publications.</div>
+            <div class="has-text-right is-uppercase">efwfewwefsf</div>
+
+            <div class="is-family-sans-serif has-text-weight-light">Sans-serif + Light</div>
+            <div class="is-family-primary has-text-weight-normal">Primary font + Normal weight</div>
+            <div class="is-family-secondary has-text-weight-medium">Secondary font + Medium weight</div>
+            <div class="is-family-monospace has-text-weight-semibold is-unselectable">Monospace + Semibold</div>
+            <div class="is-family-code has-text-weight-bold is-clickable">Code font + Bold</div>
+            <div class="is-family-sans-serif has-text-weight-extrabold">Sans-serif + Extrabold</div>
+
+        </div>
+        <!-- Adds 1rem of margin at the bottom -->
+        <p class="mg-small">small margin</p>
+
+        <!-- Adds 0.25rem of padding on the left and the right -->
+        <p class="mgt-large">large top margin</p>
+
+        <!-- Removes the margin on the right and adds 0.75rem padding at the top -->
+        <p class="mgh-medium">medium horizontal margins</p>
+    </div>
+    <div class="container has-background-primary is-clearfix" style="margin-bottom: 10px;">
+        <div style="height: 100px; width: 200px;" class="has-background-warning is-pulled-left">
+            h
+        </div>
+        <div style="height: 100px; width: 100px;" class="has-background-danger is-pulled-right">
+
+        </div>
+    </div>
+    <div class="image is-1000x1000 is-relative">
+    <img src="bulma.png" alt="Example" />
+    <div class="is-overlay has-text-white has-text-centered is-flex is-align-items-flex-end" style="background-color: rgba(0, 0, 0, 0.5); padding: 1rem;">
+        <div style="width: 100%;">This is the rules on hidden in bulma</div>
+    </div>
+    </div>
+
+
+  </section>
+  </body>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      // Select all elements with class 'is-skeleton'
+      document.querySelectorAll('.is-skeleton').forEach(el => {
+        el.classList.remove('is-skeleton');
+        console.log("skelly removed")
+      });
+    }, 5000); // 5000 milliseconds = 5 seconds
+    setTimeout(() => {
+      document.querySelectorAll('.skeleton-lines').forEach(el => {
+        el.classList.remove('skeleton-lines');
+        console.log("Lines removed")
+      });
+    }, 5000);
+  });
+</script>
+
+</html>
