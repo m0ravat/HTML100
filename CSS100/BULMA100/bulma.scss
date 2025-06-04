@@ -1,3 +1,6 @@
+// Import Sass color module at the top
+@use "sass:color";
+
 // Set your brand colors
 $purple: #8a4d76;
 $pink: #fa7c91;
@@ -30,4 +33,70 @@ $spacing-values: (
 
 // Import the Google Font
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+// Navbar dropdown fix for mobile
+@media screen and (max-width: 1023px) {
+  // Hide dropdown by default on mobile
+  .navbar-item {
+    &.has-dropdown {
+      .navbar-dropdown {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+      }
+      
+      &.is-active {
+        .navbar-dropdown {
+          display: block;
+          opacity: 1;
+        }
+      }
+      
+      // Style the navbar-link to make it more obvious it's clickable
+      .navbar-link {
+        &::after {
+          border-color: $pink;
+        }
+        
+        &:hover {
+          background-color: color.adjust($beige-lighter, $lightness: -2.5%);
+        }
+      }
+    }
+  }
+  
+  // Add some animation to the mobile menu
+  .navbar-menu {
+    transition: all 0.3s ease-in-out;
+    
+    &.is-active {
+      animation: slideDown 0.3s ease-in-out;
+    }
+  }
+}
+
+// Optional: Add animation for dropdown
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Optional: Improve touch targets on mobile
+@media screen and (max-width: 1023px) {
+  .navbar-item, 
+  .navbar-link {
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-burger {
+    height: 4rem;
+    width: 4rem;
+  }
+}
 

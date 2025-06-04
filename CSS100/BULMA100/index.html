@@ -10,24 +10,71 @@
   <body>
   <section class="section">
     <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+      <div class="box">
+        <h1 class="title is-1">
+          Hello World
+        </h1>
+        <p class="subtitle is-3">
+          My first website with <strong>Bulma</strong>!
+        </p>
+        <h1 class="title is-1 is-spaced"></h1>
+        <h2 class="subtitle is-1"></h2>
+        <h1 class="title is-6 is-spaced"></h1>
+        <h2 class="subtitle is-6"></h2>
+      </div>
+      <div class="box"> <!--Button can also be used on a, input = submit/reset-->
         <button class="button has-background-primary-100 has-text-primary-100-invert is-small">Numbers</button>
         <button class="button has-background-link-00 has-text-link-00-invert is-medium">invert</button>
-        <button class="button has-background-primary has-text-primary-dark">Light/dark</button>
+        <button class="button has-background-primary has-text-primary-dark is-rounded">Light/dark</button>
         <button class="button has-background-info-soft has-text-info-bold is-large">Light mode</button>
         <button class="button has-background-success-bold has-text-success-soft">dark mode</button>
         <button class="button has-background-danger has-text-danger-on-scheme">On scheme</button>
-        <button class="button is-warning is-loading">Loading</button>
-        <button class="button has-background-danger" disabled>Button</button>
-        <h1>Colours: </h1>
+        <button class="button is-warning is-loading is-inverted">Loading</button>
+        <button class="buttton is-primary is-light">Light button</button>
+        <button class="buttton is-primary is-dark">Light button</button>
+        <button class="button has-background-danger is-outlined" disabled>Button</button> 
+        <div class="buttons are-small">
+          <button class="button is-normal">Normal button</button>
+          <button class="button is-fullwidth">rgwgrgr</button>
+          <button class="buttton">wegegge</button>
+        </div>       
+        <div class="field is-grouped">
+          <button class="button">save</button>
+          <button class="button">delete</button>
+          <button class="button">Adjust</button>
+        </div>
+        <div class="field has-addons">
+          <p class="control"><button class="button is-selected is-info">Left</button></p>
+          <p class="control"><button class="button">center</button></p>
+          <p class="control"><button class="button">right</button></p>
+        </div>
+        <div class="block">
+          <span class="tag is-success">
+            Hello World
+            <button class="delete is-small"></button>
+          </span>
+        </div>
+        <span class="icon-text has-text-danger">
+          <span class="icon is-small"><i></i></span>
+          <span>icon text</span>
+        </span>      
+        <div class="icon-text">
+          <span class="icon has-text-success is-large">
+            <i class="fas fa-check-square"></i>
+          </span>
+          <span>Success</span>
+        </div>
+        <p class="block">Your image has been successfully uploaded.</p>
+         
+        <progress class="progress is-link is-large" value="15" max="100">
+          15%
+        </progress>
+        <progress class="progress is-small is-primary" max="100">15%</progress>
+      </div>
+      <div class="box">
         <div class="skeleton-lines">
-            <div class="is-size-4">Hey guys</div>
-            <div class="is-size-1">bjhefb <span class="is-underlined">ewff</span></div>
+            <div class="is-size-4 ">Hey guys</div>
+            <div class="is-size-1 ">bjhefb <span class="is-underlined">ewff</span></div>
             <div class="is-size-7 is-italic">thhrhyrhy</div>
 
             <div class="has-text-centered is-capitalized">rersddd</div>
@@ -40,8 +87,9 @@
             <div class="is-family-monospace has-text-weight-semibold is-unselectable">Monospace + Semibold</div>
             <div class="is-family-code has-text-weight-bold is-clickable">Code font + Bold</div>
             <div class="is-family-sans-serif has-text-weight-extrabold">Sans-serif + Extrabold</div>
-
         </div>
+      </div>
+
         <!-- Adds 1rem of margin at the bottom -->
         <p class="mg-small">small margin</p>
 
@@ -60,15 +108,570 @@
         </div>
     </div>
     <div class="image is-1000x1000 is-relative">
-    <img src="bulma.png" alt="Example" />
-    <div class="is-overlay has-text-white has-text-centered is-flex is-align-items-flex-end" style="background-color: rgba(0, 0, 0, 0.5); padding: 1rem;">
-        <div style="width: 100%;">This is the rules on hidden in bulma</div>
+      <img src="bulma.png" alt="Example" />
+      <div class="is-overlay has-text-white has-text-centered is-flex is-align-items-flex-end" style="background-color: rgba(0, 0, 0, 0.5); padding: 1rem;">
+          <div style="width: 100%;">This is the rules on hidden in bulma</div>
+      </div>
     </div>
+    <div class="content">
+      <h1>Hello world</h1>
+      <p class="block">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, cumque blanditiis rem commodi voluptate pariatur! Sunt saepe earum magni molestias quod optio qui itaque nobis incidunt dignissimos fuga et aliquid iste illo quam modi fugit, veritatis iure dolores quis minima labore nihil amet. Magnam, id accusantium ratione explicabo et tenetur! Harum nemo maiores architecto at voluptates, repellendus quod eius ipsa sapiente cupiditate incidunt doloribus, sint facere porro id nihil et omnis eligendi dolorum maxime veniam consectetur aperiam! Sapiente officiis odit iusto, amet nulla vitae nostrum veniam laboriosam inventore quod optio molestiae quas? Error voluptates praesentium reprehenderit voluptate nobis, repudiandae fugit!
+      </p>
+      <h6>Hi guys</h6>
+      <p class="block">
+        Lorem ipsum dolor sit, amet consectetur <strong>efwffew</strong> adipisicing elit. Corrupti veniam earum provident, odit minus rerum natus repudiandae ipsum? Labore, accusamus aperiam facere doloremque eos aspernatur adipisci. Sed, commodi error? Dignissimos facere in molestias porro praesentium alias, veritatis quasi nemo! Mollitia, quasi quaerat. Perferendis eligendi veniam omnis accusamus? Amet quam id facilis quibusdam dolor nisi dignissimos similique animi, rerum consequuntur recusandae voluptates magnam nam, esse aut ratione dolore debitis. Aliquam inventore temporibus voluptas repellat, sit eum veritatis, ab molestias architecto voluptatum eaque, consequatur perferendis vero quas? Sapiente veniam esse, consequuntur veritatis odio voluptatem consequatur qui, rerum, id accusamus nam quidem sequi!
+      </p>
+      <ul>
+        <li>itme 1</li>
+      </ul>
+      <ol><li>item 2</li></ol>
+      <p class="block">
+        Lorem ipsum dolor sit amet <em>rergrg</em>consectetur adipisicing elit. Officia perspiciatis laudantium minima totam dolores nostrum iusto quia omnis quam, nemo qui consequatur, aliquam ratione voluptate exercitationem odit ut blanditiis molestiae cumque laboriosam natus molestias. Delectus quidem provident minima in recusandae nulla inventore, consectetur reprehenderit architecto illum optio error nisi qui iusto eius amet enim nam laudantium officia veniam et. Doloremque iusto corporis esse. Alias consequuntur, maiores nulla necessitatibus at possimus doloremque sapiente provident modi animi veritatis voluptatibus sed fuga! Laudantium, iusto! At, natus, modi tempore itaque voluptatibus tempora a aperiam saepe incidunt tenetur voluptas voluptates labore corporis laudantium minus recusandae!
+      </p>
+      <blockquote>Sometimes you need nothing</blockquote>
     </div>
+    <div class="table-container">Scrollable table <table></table> </div>
+    <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+      <thead>
+        <tr>
+          <th><abbr title="Position">Pos</abbr></th>
+          <th>Team</th>
+          <th><abbr title="Played">Pld</abbr></th>
+          <th><abbr title="Won">W</abbr></th>
+          <th><abbr title="Drawn">D</abbr></th>
+          <th><abbr title="Lost">L</abbr></th>
+          <th><abbr title="Goals for">GF</abbr></th>
+          <th><abbr title="Goals against">GA</abbr></th>
+          <th><abbr title="Goal difference">GD</abbr></th>
+          <th><abbr title="Points">Pts</abbr></th>
+          <th>Qualification or relegation</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th><abbr title="Position">Pos</abbr></th>
+          <th>Team</th>
+          <th><abbr title="Played">Pld</abbr></th>
+          <th><abbr title="Won">W</abbr></th>
+          <th><abbr title="Drawn">D</abbr></th>
+          <th><abbr title="Lost">L</abbr></th>
+          <th><abbr title="Goals for">GF</abbr></th>
+          <th><abbr title="Goals against">GA</abbr></th>
+          <th><abbr title="Goal difference">GD</abbr></th>
+          <th><abbr title="Points">Pts</abbr></th>
+          <th>Qualification or relegation</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Leicester_City_F.C."
+              title="Leicester City F.C."
+              >Leicester City</a
+            >
+            <strong>(C)</strong>
+          </td>
+          <td>38</td>
+          <td>23</td>
+          <td>12</td>
+          <td>3</td>
+          <td>68</td>
+          <td>36</td>
+          <td>+32</td>
+          <td>81</td>
+          <td>
+            Qualification for the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+              title="2016–17 UEFA Champions League"
+              >Champions League group stage</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Arsenal_F.C."
+              title="Arsenal F.C."
+              >Arsenal</a
+            >
+          </td>
+          <td>38</td>
+          <td>20</td>
+          <td>11</td>
+          <td>7</td>
+          <td>65</td>
+          <td>36</td>
+          <td>+29</td>
+          <td>71</td>
+          <td>
+            Qualification for the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+              title="2016–17 UEFA Champions League"
+              >Champions League group stage</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C."
+              title="Tottenham Hotspur F.C."
+              >Tottenham Hotspur</a
+            >
+          </td>
+          <td>38</td>
+          <td>19</td>
+          <td>13</td>
+          <td>6</td>
+          <td>69</td>
+          <td>35</td>
+          <td>+34</td>
+          <td>70</td>
+          <td>
+            Qualification for the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+              title="2016–17 UEFA Champions League"
+              >Champions League group stage</a
+            >
+          </td>
+        </tr>
+        <tr class="is-selected">
+          <th>4</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
+              title="Manchester City F.C."
+              >Manchester City</a
+            >
+          </td>
+          <td>38</td>
+          <td>19</td>
+          <td>9</td>
+          <td>10</td>
+          <td>71</td>
+          <td>41</td>
+          <td>+30</td>
+          <td>66</td>
+          <td>
+            Qualification for the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round"
+              title="2016–17 UEFA Champions League"
+              >Champions League play-off round</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Manchester_United_F.C."
+              title="Manchester United F.C."
+              >Manchester United</a
+            >
+          </td>
+          <td>38</td>
+          <td>19</td>
+          <td>9</td>
+          <td>10</td>
+          <td>49</td>
+          <td>35</td>
+          <td>+14</td>
+          <td>66</td>
+          <td>
+            Qualification for the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+              title="2016–17 UEFA Europa League"
+              >Europa League group stage</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Southampton_F.C."
+              title="Southampton F.C."
+              >Southampton</a
+            >
+          </td>
+          <td>38</td>
+          <td>18</td>
+          <td>9</td>
+          <td>11</td>
+          <td>59</td>
+          <td>41</td>
+          <td>+18</td>
+          <td>63</td>
+          <td>
+            Qualification for the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+              title="2016–17 UEFA Europa League"
+              >Europa League group stage</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/West_Ham_United_F.C."
+              title="West Ham United F.C."
+              >West Ham United</a
+            >
+          </td>
+          <td>38</td>
+          <td>16</td>
+          <td>14</td>
+          <td>8</td>
+          <td>65</td>
+          <td>51</td>
+          <td>+14</td>
+          <td>62</td>
+          <td>
+            Qualification for the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round"
+              title="2016–17 UEFA Europa League"
+              >Europa League third qualifying round</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Liverpool_F.C."
+              title="Liverpool F.C."
+              >Liverpool</a
+            >
+          </td>
+          <td>38</td>
+          <td>16</td>
+          <td>12</td>
+          <td>10</td>
+          <td>63</td>
+          <td>50</td>
+          <td>+13</td>
+          <td>60</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Stoke_City_F.C."
+              title="Stoke City F.C."
+              >Stoke City</a
+            >
+          </td>
+          <td>38</td>
+          <td>14</td>
+          <td>9</td>
+          <td>15</td>
+          <td>41</td>
+          <td>55</td>
+          <td>−14</td>
+          <td>51</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Chelsea_F.C."
+              title="Chelsea F.C."
+              >Chelsea</a
+            >
+          </td>
+          <td>38</td>
+          <td>12</td>
+          <td>14</td>
+          <td>12</td>
+          <td>59</td>
+          <td>53</td>
+          <td>+6</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Everton_F.C."
+              title="Everton F.C."
+              >Everton</a
+            >
+          </td>
+          <td>38</td>
+          <td>11</td>
+          <td>14</td>
+          <td>13</td>
+          <td>59</td>
+          <td>55</td>
+          <td>+4</td>
+          <td>47</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>12</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Swansea_City_A.F.C."
+              title="Swansea City A.F.C."
+              >Swansea City</a
+            >
+          </td>
+          <td>38</td>
+          <td>12</td>
+          <td>11</td>
+          <td>15</td>
+          <td>42</td>
+          <td>52</td>
+          <td>−10</td>
+          <td>47</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>13</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Watford_F.C."
+              title="Watford F.C."
+              >Watford</a
+            >
+          </td>
+          <td>38</td>
+          <td>12</td>
+          <td>9</td>
+          <td>17</td>
+          <td>40</td>
+          <td>50</td>
+          <td>−10</td>
+          <td>45</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C."
+              title="West Bromwich Albion F.C."
+              >West Bromwich Albion</a
+            >
+          </td>
+          <td>38</td>
+          <td>10</td>
+          <td>13</td>
+          <td>15</td>
+          <td>34</td>
+          <td>48</td>
+          <td>−14</td>
+          <td>43</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>15</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Crystal_Palace_F.C."
+              title="Crystal Palace F.C."
+              >Crystal Palace</a
+            >
+          </td>
+          <td>38</td>
+          <td>11</td>
+          <td>9</td>
+          <td>18</td>
+          <td>39</td>
+          <td>51</td>
+          <td>−12</td>
+          <td>42</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>16</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/A.F.C._Bournemouth"
+              title="A.F.C. Bournemouth"
+              >AFC Bournemouth</a
+            >
+          </td>
+          <td>38</td>
+          <td>11</td>
+          <td>9</td>
+          <td>18</td>
+          <td>45</td>
+          <td>67</td>
+          <td>−22</td>
+          <td>42</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>17</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Sunderland_A.F.C."
+              title="Sunderland A.F.C."
+              >Sunderland</a
+            >
+          </td>
+          <td>38</td>
+          <td>9</td>
+          <td>12</td>
+          <td>17</td>
+          <td>48</td>
+          <td>62</td>
+          <td>−14</td>
+          <td>39</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>18</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Newcastle_United_F.C."
+              title="Newcastle United F.C."
+              >Newcastle United</a
+            >
+            <strong>(R)</strong>
+          </td>
+          <td>38</td>
+          <td>9</td>
+          <td>10</td>
+          <td>19</td>
+          <td>44</td>
+          <td>65</td>
+          <td>−21</td>
+          <td>37</td>
+          <td>
+            Relegation to the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+              title="2016–17 Football League Championship"
+              >Football League Championship</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>19</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Norwich_City_F.C."
+              title="Norwich City F.C."
+              >Norwich City</a
+            >
+            <strong>(R)</strong>
+          </td>
+          <td>38</td>
+          <td>9</td>
+          <td>7</td>
+          <td>22</td>
+          <td>39</td>
+          <td>67</td>
+          <td>−28</td>
+          <td>34</td>
+          <td>
+            Relegation to the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+              title="2016–17 Football League Championship"
+              >Football League Championship</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th>20</th>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Aston_Villa_F.C."
+              title="Aston Villa F.C."
+              >Aston Villa</a
+            >
+            <strong>(R)</strong>
+          </td>
+          <td>38</td>
+          <td>3</td>
+          <td>8</td>
+          <td>27</td>
+          <td>27</td>
+          <td>76</td>
+          <td>−49</td>
+          <td>17</td>
+          <td>
+            Relegation to the
+            <a
+              href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+              title="2016–17 Football League Championship"
+              >Football League Championship</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="field is-grouped is-grouped-multiline">
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Technology</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
 
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">CSS</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
 
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Flexbox</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Web Design</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Open Source</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Community</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Documentation</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+    </div>  
   </section>
-  </body>
+</body>
 <script>
   window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {

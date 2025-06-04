@@ -21171,4 +21171,48 @@ has-background-danger.is-hoverable:active {
   pointer-events: all !important;
 }
 
+@media screen and (max-width: 1023px) {
+  .navbar-item.has-dropdown .navbar-dropdown {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .navbar-item.has-dropdown.is-active .navbar-dropdown {
+    display: block;
+    opacity: 1;
+  }
+  .navbar-item.has-dropdown .navbar-link::after {
+    border-color: #fa7c91;
+  }
+  .navbar-item.has-dropdown .navbar-link:hover {
+    background-color: rgb(233.1714285714, 234.5357142857, 227.7142857143);
+  }
+  .navbar-menu {
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-menu.is-active {
+    animation: slideDown 0.3s ease-in-out;
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .navbar-item,
+  .navbar-link {
+    padding: 0.75rem 1rem;
+  }
+  .navbar-burger {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
 /*# sourceMappingURL=my-bulma-project.css.map */

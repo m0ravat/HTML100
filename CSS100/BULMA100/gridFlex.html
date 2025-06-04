@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="my-bulma-project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="section has-background-primary">
+    <div class="columns has-background-link is-gapless is-vcentered is-centered"> <!-- can make width is-full to is-one-fifth and other fractions in between 1-5-->
+        <div class="column">1</div> <!-- can use columns is-1 to is-12 instead too, and if-offset-8 or if-offset-one-fith-->
+        <div class="column">2</div> <!-- use is-narrow to make it take space needed and other will take rest-->
+        <div class="column">3</div> <!-- columns are only tablet onwards, to put on mobile put is-mobile with columns or is-desktop-->
+        <!-- for desktop onwards or   <div
+            class="
+            column
+            is-three-quarters-mobile
+            is-two-thirds-tablet
+            is-half-desktop
+            is-one-third-widescreen
+            is-one-quarter-fullhd
+            "
+        > -->
+        <!--is-multiline allows new rows. is-1 to is-8 with columns for gap-->
+        <div class="column">4</div>
+        <div class="column">5</div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <p class="bd-notification is-info">First column</p>
+            <div class="columns is-mobile">
+            <div class="column">
+                <p class="bd-notification is-info">First nested column</p>
+            </div>
+            <div class="column">
+                <p class="bd-notification is-info">Second nested column</p>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <p class="bd-notification is-danger">Second column</p>
+            <div class="columns is-mobile">
+            <div class="column is-half">
+                <p class="bd-notification is-danger">50%</p>
+            </div>
+            <div class="column">
+                <p class="bd-notification is-danger">Auto</p>
+            </div>
+            <div class="column">
+                <p class="bd-notification is-danger">Auto</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--customise grid columns with is-col-start-1 (which col starts at), is-col-end-2 (which col it ends at counting from end)-->
+    <!--col-span for how many col it spans over, same with rows. -->
+    <div class="grid">
+        <div class="cell">Cell 1</div>
+        <div class="cell">Cell 2</div>
+        <div class="cell">Cell 3</div>
+        <div class="cell">Cell 4</div>
+        <div class="cell">Cell 5</div>
+        <div class="cell">Cell 6</div>
+        <div class="cell">Cell 7</div>
+        <div class="cell">Cell 8</div>
+        <div class="cell">Cell 9</div>
+        <div class="cell">Cell 10</div>
+        <div class="cell">Cell 11</div>
+        <div class="cell">Cell 12</div>
+        <div class="cell">Cell 13</div>
+        <div class="cell">Cell 14</div>
+        <div class="cell">Cell 15</div>
+        <div class="cell">Cell 16</div>
+        <div class="cell">Cell 17</div>
+        <div class="cell">Cell 18</div>
+        <div class="cell">Cell 19</div>
+        <div class="cell">Cell 20</div>
+        <div class="cell">Cell 21</div>
+        <div class="cell">Cell 22</div>
+        <div class="cell">Cell 23</div>
+        <div class="cell">Cell 24</div>
+    </div> <!--change col width on this smart grid from is-min-col-1 to 32, is-gap, is-row,gap, is-column-gap from 0-8-->
+    <div class="fixed-grid">
+    <div class="grid">
+        <div class="cell">Cell 1</div>
+        <div class="cell">Cell 2</div>
+        <div class="cell">Cell 3</div>
+        <div class="cell">Cell 4</div>
+        <div class="cell">Cell 5</div>
+        <div class="cell">Cell 6</div>
+        <div class="cell">Cell 7</div>
+        <div class="cell">Cell 8</div>
+        <div class="cell">Cell 9</div>
+        <div class="cell">Cell 10</div>
+        <div class="cell">Cell 11</div>
+        <div class="cell">Cell 12</div>
+    </div>
+    </div> <!--has-1-cols to has-12-cols, add device at end like -mobile or use has-auto=count for auto responsive-->
+</body>
+</html>
