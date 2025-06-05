@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="my-bulma-project.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .page-wrapper {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="progress">
+      <div class="determinate" style="width: 70%"></div>
+  </div>
+  <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+
+  <section id="bulma">
+            <progress class="progress is-link is-large" value="15" max="100">
+          15%
+        </progress>
+        <progress class="progress is-small is-primary" max="100">15%</progress>
+  </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+        var tool = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(tool, options);
+    });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>        
+</body>
+</html>

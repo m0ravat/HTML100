@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="my-bulma-project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="buttons">
+        <h1>Buttons: </h1>
+        <a href="" class="btn waves-effect waves-dark">Normal button</a>
+        <a href="" class="btn-small">Small button</a>
+        <a href="" class="btn-large">large button</a>
+        <a href="" class="btn pink flat">Pink button</a>
+        <a href="" class="btn disabled">Disabled button</a>
+        <a href="" class="btn-floating red pulse"></a>
+        <div class="btn-small ">I ama  button too</div>
+    </div>
+    <div class="container" id="icons">
+        <h1>Icons</h1>
+        <i class="material-icons brown-text">person</i>
+        <i class="material-icons yellow-text">mail</i>
+        <i class="material-icons red-text darken-2">warning</i>
+        <i class="material-icons red-text lighten-3 large">error</i>
+        <a href="" class="btn indigo">
+            <span>Send</span>
+            <i class="material-icons right tiny">send</i>
+        </a>
+        <a href="" class="btn pink waves-effect waves-light">
+            <span>Send</span>
+            <i class="material-icons right small">mail</i>
+        </a>
+        <a href="" class="btn-floating pulse black">
+            <i class="material-icons blue-text medium">edit</i>
+        </a>
+    </div>
+    <!-- Scaled in -->
+  <a id="scale-demo" href="#!" class="btn-floating btn-large right scale-transition">
+    <i class="material-icons">add</i>
+  </a>
+
+  <!-- Scaled out -->
+  <a id="scale-demo" href="#!" class="btn-floating btn-large left scale-transition scale-out">
+    <i class="material-icons">add</i>
+  </a>
+  
+  <div class="collection">
+    <a href="#!" class="collection-item"><span class="badge">1</span>Alan</a>
+    <a href="#!" class="collection-item"><span class="new badge">4</span>Alan</a>
+    <a href="#!" class="collection-item">Alan</a>
+    <a href="#!" class="collection-item red"><span class="badge blue white-text">14</span>Alan</a>
+  </div>
+
+<section id="bulma">
+    <div class="field is-grouped is-grouped-multiline">
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Technology</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">CSS</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Flexbox</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Web Design</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Open Source</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Community</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+
+      <div class="control">
+        <div class="tags has-addons">
+          <a class="tag is-link">Documentation</a>
+          <a class="tag is-delete"></a>
+        </div>
+      </div>
+    </div>  
+      <div class="box"> <!--Button can also be used on a, input = submit/reset-->
+        <button class="button has-background-primary-100 has-text-primary-100-invert is-small">Numbers</button>
+        <button class="button has-background-link-00 has-text-link-00-invert is-medium">invert</button>
+        <button class="button has-background-primary has-text-primary-dark is-rounded">Light/dark</button>
+        <button class="button has-background-info-soft has-text-info-bold is-large">Light mode</button>
+        <button class="button has-background-success-bold has-text-success-soft">dark mode</button>
+        <button class="button has-background-danger has-text-danger-on-scheme">On scheme</button>
+        <button class="button is-warning is-loading is-inverted">Loading</button>
+        <button class="buttton is-primary is-light">Light button</button>
+        <button class="buttton is-primary is-dark">Light button</button>
+        <button class="button has-background-danger is-outlined" disabled>Button</button> 
+        <div class="buttons are-small">
+          <button class="button is-normal">Normal button</button>
+          <button class="button is-fullwidth">rgwgrgr</button>
+          <button class="buttton">wegegge</button>
+        </div>       
+        <div class="field is-grouped">
+          <button class="button">save</button>
+          <button class="button">delete</button>
+          <button class="button">Adjust</button>
+        </div>
+        <div class="field has-addons">
+          <p class="control"><button class="button is-selected is-info">Left</button></p>
+          <p class="control"><button class="button">center</button></p>
+          <p class="control"><button class="button">right</button></p>
+        </div>
+        <div class="block">
+          <span class="tag is-success">
+            Hello World
+            <button class="delete is-small"></button>
+          </span>
+        </div>
+        <span class="icon-text has-text-danger">
+          <span class="icon is-small"><i></i></span>
+          <span>icon text</span>
+        </span>      
+        <div class="icon-text">
+          <span class="icon has-text-success is-large">
+            <i class="fas fa-check-square"></i>
+          </span>
+          <span>Success</span>
+        </div>
+
+      </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+</body>
+</html>

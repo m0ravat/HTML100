@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="my-bulma-project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+    <section id="bulma">
+        <nav class="pagination is-rounded is-small" role="navigation" aria-label="pagination">
+            <a class="pagination-previous is-disabled" title="This is the first page"
+                >Previous</a
+            >
+            <a href="#" class="pagination-next">Next page</a>
+            <ul class="pagination-list">
+                <li>
+                <a
+                    class="pagination-link is-current"
+                    aria-label="Page 1"
+                    aria-current="page"
+                    >1</a
+                >
+                </li>
+                <li>
+                <a href="#" class="pagination-link" aria-label="Goto page 2">2</a>
+                </li>
+                <li>
+                <a href="#" class="pagination-link" aria-label="Goto page 3">3</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>
