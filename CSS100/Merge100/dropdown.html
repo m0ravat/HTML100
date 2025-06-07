@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="my-bulma-project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mixed Dropdowns</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    body {
+      padding: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-    </ul>
+
+
+  <!-- Materialize Collapsible -->
   <ul class="collapsible expandable">
     <li>
       <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
@@ -29,36 +34,57 @@
       <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
     </li>
   </ul>
+
+  <!-- Bulma Dropdown -->
   <section id="bulma">
     <div class="dropdown is-up" id="dropdown">
-        <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="trigger">
-            <span>Dropdown button</span>
-            <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-            </button>
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="trigger">
+          <span>Bulma Dropdown</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">Dropdown item</a>
+          <a class="dropdown-item">Other dropdown item</a>
+          <div class="dropdown-item"><p>Lorem ipsum <strong>hewfk</strong> sit amet.</p></div>
+          <a href="#" class="dropdown-item">Other dropdown item</a>
+          <hr class="dropdown-divider" />
+          <a href="#" class="dropdown-item">With a divider</a>
         </div>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-            <a href="#" class="dropdown-item"> Dropdown item </a>
-            <a class="dropdown-item"> Other dropdown item </a>
-            <div class="dropdown-item"><p>Lorem ipsum dolor <strong>hewfk </strong>sit amet.</p></div>
-            <a href="#" class="dropdown-item"> Other dropdown item </a>
-            <hr class="dropdown-divider" />
-            <a href="#" class="dropdown-item"> With a divider </a>
-            </div>
-        </div>
+      </div>
     </div>
-  </section>
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        M.AutoInit();
-        var elems = document.querySelectorAll('.dropdown-trigger');
-        M.Dropdown.init(elems);
-        var col = document.querySelectorAll('.collapsible');
-        var instances = M.Collapsible.init(col, options);
+  </section> <!-- wont work with materialise on same site but works-->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {
+      accordion: false
     });
-</script>
+
+      // Bulma Dropdown
+      const trigger = document.getElementById('trigger');
+      const dropdown = document.getElementById('dropdown');
+
+      trigger.addEventListener('click', function (event) {
+        event.stopPropagation();
+        dropdown.classList.toggle('is-active');
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove('is-active');
+        }
+      });
+    });
+  </script>
+</body>
 </html>

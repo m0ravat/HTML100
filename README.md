@@ -22,15 +22,29 @@ running functions, confusing for people who don't know how it works.
 
 # CSS 
 
-## Bulma 
-Prebuilt CSS library for quick website themes and design. Requires use of SAAS to adjust theme colours, extensive features on
-components and page layout based elements. 
+## CSS based Libraries
 
-Pros - Handles responsiveness well, very good hero section/navbar. Handles padding/centering well in forms and uses skeleton lines. 
-Good pagination layout as well as modals & card setups made already. 
+Bulma and Materialise are 2 CSS libraries with predefined classes for quick web design which I grouped together to compare. 
 
-## Materialise
-Prebuilt CSS library similar to Bulma. 
+Bulma unique features: Skeleton lines, built in toolpanel, built in hero template, floating built in, overlay and colour themes.
+
+Materialise unique features: tooltips
+
+### Merge comparison  
+
+Materialise has built in colours, bulma utilises a theme based colouring system.  
+Bulma has good basic classes for paragraphs/titles.   
+Bulma containers are centered horizontally + more support on responsiveness.  
+Bulma has nice colour schemes with invert + other modifiers for dark/light modes, good tags/control. Materialise has nice buttons + icons.  
+Bulma has nice card designs for social media, materialise has nice cards for basic designs.   
+Materialise has easy to use tabs and collapsibles, bulma has easy dropdowns.  
+Materialise has the better footer, Bulma has better forms but materialise has datepicker/timepicker which is nice.   
+Grids are more or less identical but I prefer materialise since more adjustable with 12.  
+Modals are identical, I prefer bulma.  
+Pagination better on bulma when ..., if defined number pages materialise better.  
+Prefer bulma based tables as well. 
+
+Conclusion - Use materialise for tabs/collapsibles, date/timepicker, grids, short pagination, basic cards and for colours. Personally prefer bulma for the rest. 
 
 
 
