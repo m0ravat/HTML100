@@ -46,6 +46,10 @@ Prefer bulma based tables as well.
 
 Conclusion - Use materialise for tabs/collapsibles, date/timepicker, grids, short pagination, basic cards and for colours. Personally prefer bulma for the rest. 
 
+## Bootstrap
+
+Similar to bulma and materialise, except it requires vite/webpack for setup. Has more features so it's built to be used solely on frameworks, overkill on native HTML/CSS which is more suitable with bulma/materialise.
+
 
 
 
